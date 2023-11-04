@@ -9,15 +9,21 @@ namespace _44.C__Methods
             Console.WriteLine("My Name is Mohamed");
         }
 
-        static void PrintName(string Name, int Age)
+        static void PrintName(string Name, byte Age)
         {
             Console.WriteLine($"My name is {Name}. My age is {Age}.");
+        }
+
+        static void PrintMyInfo(string Name, byte Age, string Address = "No Address")
+        {
+            Console.WriteLine("Name= {0} , Age= {1}, Address= {2}", Name, Age, Address);
         }
 
         static void Main(string[] args)
         {
             PrintName();
             PrintName("Mohamed Badwy", 23);
+            PrintMyInfo("Mohammed-AbuHadhoud", 45, "Amman-Jordan");
         }
     }
 }
