@@ -25,6 +25,11 @@ namespace _44.C__Methods
 
         }
 
+        static void MyMethod(string child1, string child2, string child3)
+        {
+            Console.WriteLine("The youngest child is: " + child3);
+        }
+
         static void Main(string[] args)
         {
             PrintName();
@@ -32,7 +37,7 @@ namespace _44.C__Methods
             PrintMyInfo("Mohammed-AbuHadhoud", 45, "Amman-Jordan");
             Console.WriteLine(GetMyName());
 
-
+            MyMethod(child3: "Mohamed", child1: "Ahmed", child2: "Amgad");
         }
     }
 }
