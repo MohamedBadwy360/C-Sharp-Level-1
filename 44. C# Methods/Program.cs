@@ -19,11 +19,20 @@ namespace _44.C__Methods
             Console.WriteLine("Name= {0} , Age= {1}, Address= {2}", Name, Age, Address);
         }
 
+        static string GetMyName()
+        {
+            return "Mohammed-AbuHadhoud";
+
+        }
+
         static void Main(string[] args)
         {
             PrintName();
             PrintName("Mohamed Badwy", 23);
             PrintMyInfo("Mohammed-AbuHadhoud", 45, "Amman-Jordan");
+            Console.WriteLine(GetMyName());
+
+
         }
     }
 }
