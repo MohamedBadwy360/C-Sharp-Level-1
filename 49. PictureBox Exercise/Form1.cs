@@ -20,40 +20,31 @@ namespace _49.PictureBox_Exercise
 
         private void rbBoy_CheckedChanged(object sender, EventArgs e)
         {
-            if (rbBoy.Checked) 
-            {
                 pbImage.Image = Resources.Boy;
                 lblTitle.Text = ((RadioButton) sender).Tag.ToString();
-            }
         }
 
         private void rbGirl_CheckedChanged(object sender, EventArgs e)
         {
-            if (rbGirl.Checked)
-            {
                 pbImage.Image = Resources.Girl;
                 lblTitle.Text = ((RadioButton)sender).Tag.ToString();
-            }
         }
 
         private void rbBook_CheckedChanged(object sender, EventArgs e)
         {
-            if (rbBook.Checked)
-            {
                 pbImage.Image = Resources.Book;
                 lblTitle.Text = ((RadioButton)sender).Tag.ToString();
-            }
         }
 
         private void rbPen_CheckedChanged(object sender, EventArgs e)
         {
-            if (rbPen.Checked)
-            {
                 pbImage.Image = Resources.Pen;
                 lblTitle.Text = ((RadioButton)sender).Tag.ToString();
-            }
         }
 
-        
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            rbBoy.Checked = true;
+        }
     }
 }
