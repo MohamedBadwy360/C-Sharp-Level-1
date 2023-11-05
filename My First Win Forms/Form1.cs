@@ -26,5 +26,45 @@ namespace My_First_Win_Forms
         {
             textBox2.Text = textBox1.Text;
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            textBox2.Text = textBox1.Text;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            textBox1.Enabled = false;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            textBox1.Enabled = true;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            textBox1.Visible = false;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            textBox1.Visible = true;
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            textBox1.BackColor = Color.Red;
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            this.Text = "Desktop App";
+        }
+
+        private void btnCLose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

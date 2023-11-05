@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace My_First_Win_Forms
+namespace _48.Pizza_Project
 {
     internal static class Program
     {
@@ -16,7 +16,7 @@ namespace My_First_Win_Forms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form2());
+            Application.Run(new Form1());
         }
     }
 }
