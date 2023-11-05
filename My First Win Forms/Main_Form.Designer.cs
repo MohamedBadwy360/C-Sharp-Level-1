@@ -32,6 +32,7 @@
             this.btnShowDialog = new System.Windows.Forms.Button();
             this.btnShowMessageForm = new System.Windows.Forms.Button();
             this.btnShowGroupForm = new System.Windows.Forms.Button();
+            this.btnPictureBox = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnShowPart1
@@ -74,11 +75,22 @@
             this.btnShowGroupForm.UseVisualStyleBackColor = true;
             this.btnShowGroupForm.Click += new System.EventHandler(this.btnShowGroupForm_Click);
             // 
+            // btnPictureBox
+            // 
+            this.btnPictureBox.Location = new System.Drawing.Point(257, 43);
+            this.btnPictureBox.Name = "btnPictureBox";
+            this.btnPictureBox.Size = new System.Drawing.Size(155, 72);
+            this.btnPictureBox.TabIndex = 4;
+            this.btnPictureBox.Text = "Show Picture Box Form";
+            this.btnPictureBox.UseVisualStyleBackColor = true;
+            this.btnPictureBox.Click += new System.EventHandler(this.btnPictureBox_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1100, 510);
+            this.Controls.Add(this.btnPictureBox);
             this.Controls.Add(this.btnShowGroupForm);
             this.Controls.Add(this.btnShowMessageForm);
             this.Controls.Add(this.btnShowDialog);
@@ -95,5 +107,6 @@
         private System.Windows.Forms.Button btnShowDialog;
         private System.Windows.Forms.Button btnShowMessageForm;
         private System.Windows.Forms.Button btnShowGroupForm;
+        private System.Windows.Forms.Button btnPictureBox;
     }
 }

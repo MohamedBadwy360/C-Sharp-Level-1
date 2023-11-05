@@ -40,5 +40,11 @@ namespace My_First_Win_Forms
             Form frm1 = new frmCheckRadioGroup();
             frm1.ShowDialog();
         }
+
+        private void btnPictureBox_Click(object sender, EventArgs e)
+        {
+            Form frm1 = new frmPictureBox();
+            frm1.ShowDialog();
+        }
     }
 }
