@@ -30,10 +30,8 @@
         {
             this.lblTitle = new System.Windows.Forms.Label();
             this.pbImage = new System.Windows.Forms.PictureBox();
-            this.rbBoy = new System.Windows.Forms.RadioButton();
-            this.rbGirl = new System.Windows.Forms.RadioButton();
-            this.rbBook = new System.Windows.Forms.RadioButton();
-            this.rbPen = new System.Windows.Forms.RadioButton();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,85 +40,59 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Playbill", 90F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblTitle.Location = new System.Drawing.Point(601, 9);
+            this.lblTitle.Location = new System.Drawing.Point(451, 7);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(215, 152);
+            this.lblTitle.Size = new System.Drawing.Size(174, 121);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Title";
             // 
             // pbImage
             // 
             this.pbImage.Image = global::_49.PictureBox_Exercise.Properties.Resources.Boy;
-            this.pbImage.Location = new System.Drawing.Point(338, 166);
+            this.pbImage.Location = new System.Drawing.Point(254, 135);
+            this.pbImage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbImage.Name = "pbImage";
-            this.pbImage.Size = new System.Drawing.Size(766, 439);
+            this.pbImage.Size = new System.Drawing.Size(574, 357);
             this.pbImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbImage.TabIndex = 1;
             this.pbImage.TabStop = false;
             // 
-            // rbBoy
+            // comboBox2
             // 
-            this.rbBoy.AutoSize = true;
-            this.rbBoy.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbBoy.Location = new System.Drawing.Point(410, 643);
-            this.rbBoy.Name = "rbBoy";
-            this.rbBoy.Size = new System.Drawing.Size(78, 33);
-            this.rbBoy.TabIndex = 2;
-            this.rbBoy.Tag = "Boy";
-            this.rbBoy.Text = "Boy";
-            this.rbBoy.UseVisualStyleBackColor = true;
-            this.rbBoy.CheckedChanged += new System.EventHandler(this.rbBoy_CheckedChanged);
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Boy",
+            "Girl",
+            "Pen",
+            "Book"});
+            this.comboBox2.Location = new System.Drawing.Point(522, 528);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(149, 21);
+            this.comboBox2.TabIndex = 3;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
-            // rbGirl
+            // label1
             // 
-            this.rbGirl.AutoSize = true;
-            this.rbGirl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbGirl.Location = new System.Drawing.Point(589, 643);
-            this.rbGirl.Name = "rbGirl";
-            this.rbGirl.Size = new System.Drawing.Size(73, 33);
-            this.rbGirl.TabIndex = 3;
-            this.rbGirl.Tag = "Girl";
-            this.rbGirl.Text = "Girl";
-            this.rbGirl.UseVisualStyleBackColor = true;
-            this.rbGirl.CheckedChanged += new System.EventHandler(this.rbGirl_CheckedChanged);
-            // 
-            // rbBook
-            // 
-            this.rbBook.AutoSize = true;
-            this.rbBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbBook.Location = new System.Drawing.Point(763, 643);
-            this.rbBook.Name = "rbBook";
-            this.rbBook.Size = new System.Drawing.Size(92, 33);
-            this.rbBook.TabIndex = 4;
-            this.rbBook.Tag = "Book";
-            this.rbBook.Text = "Book";
-            this.rbBook.UseVisualStyleBackColor = true;
-            this.rbBook.CheckedChanged += new System.EventHandler(this.rbBook_CheckedChanged);
-            // 
-            // rbPen
-            // 
-            this.rbPen.AutoSize = true;
-            this.rbPen.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbPen.Location = new System.Drawing.Point(956, 643);
-            this.rbPen.Name = "rbPen";
-            this.rbPen.Size = new System.Drawing.Size(79, 33);
-            this.rbPen.TabIndex = 5;
-            this.rbPen.Tag = "Pen";
-            this.rbPen.Text = "Pen";
-            this.rbPen.UseVisualStyleBackColor = true;
-            this.rbPen.CheckedChanged += new System.EventHandler(this.rbPen_CheckedChanged);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Goudy Stout", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label1.Location = new System.Drawing.Point(350, 528);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(125, 22);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Choose";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1411, 750);
-            this.Controls.Add(this.rbPen);
-            this.Controls.Add(this.rbBook);
-            this.Controls.Add(this.rbGirl);
-            this.Controls.Add(this.rbBoy);
+            this.ClientSize = new System.Drawing.Size(1058, 609);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.pbImage);
             this.Controls.Add(this.lblTitle);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -134,10 +106,8 @@
 
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.PictureBox pbImage;
-        private System.Windows.Forms.RadioButton rbBoy;
-        private System.Windows.Forms.RadioButton rbGirl;
-        private System.Windows.Forms.RadioButton rbBook;
-        private System.Windows.Forms.RadioButton rbPen;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label label1;
     }
 }
 

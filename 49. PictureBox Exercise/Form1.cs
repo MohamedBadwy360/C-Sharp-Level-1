@@ -16,35 +16,35 @@ namespace _49.PictureBox_Exercise
         public Form1()
         {
             InitializeComponent();
-        }
-
-        private void rbBoy_CheckedChanged(object sender, EventArgs e)
-        {
-                pbImage.Image = Resources.Boy;
-                lblTitle.Text = ((RadioButton) sender).Tag.ToString();
-        }
-
-        private void rbGirl_CheckedChanged(object sender, EventArgs e)
-        {
-                pbImage.Image = Resources.Girl;
-                lblTitle.Text = ((RadioButton)sender).Tag.ToString();
-        }
-
-        private void rbBook_CheckedChanged(object sender, EventArgs e)
-        {
-                pbImage.Image = Resources.Book;
-                lblTitle.Text = ((RadioButton)sender).Tag.ToString();
-        }
-
-        private void rbPen_CheckedChanged(object sender, EventArgs e)
-        {
-                pbImage.Image = Resources.Pen;
-                lblTitle.Text = ((RadioButton)sender).Tag.ToString();
-        }
+        } 
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            rbBoy.Checked = true;
+            comboBox2.SelectedIndex = 0;
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox2.SelectedIndex == 0)
+            {
+                pbImage.Image = Resources.Boy;
+                lblTitle.Text = "Boy";
+            }
+            else if (comboBox2.SelectedIndex == 1)
+            {
+                pbImage.Image = Resources.Girl;
+                lblTitle.Text = "Girl";
+            }
+            else if (comboBox2.SelectedIndex == 2)
+            {
+                pbImage.Image = Resources.Pen;
+                lblTitle.Text = "Pen";
+            }
+            else
+            {
+                pbImage.Image = Resources.Book;
+                lblTitle.Text = "Book";
+            }
         }
     }
 }
