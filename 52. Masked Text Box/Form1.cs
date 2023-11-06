@@ -16,5 +16,20 @@ namespace _52.Masked_Text_Box
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            comboBox1.Items.Add("Egypt");
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MessageBox.Show(comboBox1.Text);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            comboBox1.SelectedIndex = 1;
+        }
     }
 }
